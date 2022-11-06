@@ -1,0 +1,58 @@
+//- index.pug
+doctype html
+html
+  head
+    title Aishwarya dance academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+        ul 
+            div#logo
+                img(src="/static/img/logo.png", alt="")
+                | HDA   
+            li #[a(href="/") Home]  
+            li #[a(href="/") About] 
+            li #[a(href="/") Services]  
+            li #[a(href="/") Class Info]  
+            li #[a(href="/") Contact Us]  
+
+    section#introSection 
+        div  Welcome to Aishwarya's Dance Academy 
+        div.small  Eat Sleep dance Repeat
+
+    section#missionSection 
+        h2  Our Mission  
+        div.card
+            h3  Dance Perfection  
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content 
+                    p This is the best dance academy in the universe  
+        div.card
+            h3  Dance the way you like 
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content 
+                    p This is the best dance academy in the universe  
+        div.card
+            h3  Expert  Teaching 
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content 
+                    p This is the best dance academy in the universe  
+    section#sponsorsSection 
+            h2  Our sponsors
+            div#sponsors 
+                img(src="/static/img/logo1.png", alt="Sponsor Image" class="spImage")
+                img(src="/static/img/logo2.png", alt="Sponsor Image" class="spImage")
+                img(src="/static/img/logo3.png", alt="Sponsor Image" class="spImage")
+                img(src="/static/img/logo4.png", alt="Sponsor Image" class="spImage" id="Ooo")
+
+    footer#footer 
+        | Copyright @ 2022 AishwaryaDanceAcademy.com | All right resverd
+    script
+      include ../static/index.js
